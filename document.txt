@@ -1,0 +1,22 @@
+1.Header
+    1.1 Logo -> OK
+    1.2 Navigation -> OK
+        a. Menu cấp 1 -> OK
+        b. Menu cấp 2 -> OK
+    1.3 Button 'BOOK NOW' -> OK
+    1.4 Menu cạnh phải
+    1.5 Chử tiêu đề
+    1.6 Ô tiềm kiếm
+    1.7 Các icon tiềm kiếm theo chủ đề
+    
+3.Body
+    3.1 Danh sách các điểm đến
+    3.2 Phần 'Your Next Holiday'
+    3.3 Phần ' Bãi biển tốt nhất'
+    3.4 Phần 'World tour' + 'Cruise' + ' Best tour'
+    3.5 Phần Discover Cities + Nature
+    3.6 Phần Our Packeges
+
+4.Footer
+    4.1 Phần Travel with Us
+    4.2 Phần thông tin về Travel
