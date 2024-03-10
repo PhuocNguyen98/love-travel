@@ -1,11 +1,310 @@
 /* Tablet & Mobile */
 @media (max-width: 63.9375em) {
+  .hide-on-tablet-mobile {
+    display: none;
+  }
+
+  .show-on-tablet-mobile {
+    display: block;
+  }
+
+  .top__header-wrap {
+    background-color: rgba(88, 85, 85, 0.5);
+  }
+
+  .top__header {
+    flex-direction: column;
+  }
+
+  .top__header-wrap .header__logo {
+    margin-right: 0;
+  }
+
+  .header-search__topic {
+    flex-direction: column;
+  }
+
+  .best-beach__content {
+    margin-bottom: 32px;
+  }
+
+  .best-beach__timer {
+    height: unset;
+    width: 100%;
+    left: 0;
+    top: 100%;
+  }
+
+  .best-beach__timer li {
+    padding: 10px 0;
+  }
+
+  .best-beach__timer-label {
+    margin: 10px 0;
+  }
+
+  .best-beach__list {
+    margin-top: 120px;
+  }
+
+  .best-beach__item {
+    margin: 15px 0;
+  }
+
+  .best-beach__item-desc {
+    margin: 6px 0;
+  }
+
+  .our-package__item-img {
+    height: unset;
+  }
+
+  .our-package__item {
+    margin: 15px 0;
+  }
+
+  .footer__copyright span {
+    display: block;
+    text-align: center !important;
+    padding: 10px 0;
+  }
+
+  .contact__content {
+    margin: 0;
+  }
 }
 
 /* Tablet */
 @media (min-width: 46.25em) and (max-width: 63.9375em) {
+  .hide-on-tablet {
+    display: none;
+  }
+
+  .show-on-tablet {
+    display: block;
+  }
+
+  .header {
+    padding-top: 150%;
+    background-position: center right 40%;
+  }
+
+  .header__logo-img {
+    height: 42px;
+    padding: 0;
+  }
+
+  .mobile__btn-menu {
+    font-size: 3rem;
+  }
+
+  .body__header {
+    top: 52%;
+    width: 100%;
+  }
+
+  .header__search-wrap {
+    width: 80%;
+  }
+
+  .header__search {
+    width: 100%;
+  }
+
+  .header-search__select {
+    flex: none;
+    width: 70%;
+    padding: 16px 25px;
+    font-size: 1.6rem;
+  }
+
+  .header-search__btn {
+    font-size: 2.4rem;
+    padding-top: 16px;
+  }
+
+  .header-search__item {
+    width: 100%;
+    margin: 15px;
+  }
+
+  .header-search__item-link span {
+    font-size: 1.4rem;
+  }
+
+  .header-search__topic {
+    width: 80%;
+  }
+
+  .next-holiday__wrap {
+    padding-top: 50%;
+  }
+
+  .next-holiday__content {
+    flex-direction: column;
+    position: absolute;
+    top: 10%;
+  }
+
+  .next-holiday__btn {
+    left: 50%;
+  }
+
+  .contact__wrap {
+    margin: 0;
+  }
+
+  .contact__form {
+    margin: 24px 0 0 0;
+  }
+
+  .contact__input {
+    flex: 1;
+  }
+
+  .contact__btn {
+    padding: 17px 66px;
+  }
 }
 
 /* Mobile */
 @media (max-width: 46.1875em) {
+  .hide-on-mobile {
+    display: none;
+  }
+
+  .show-on-mobile {
+    display: block;
+  }
+
+  .header {
+    padding-top: 250%;
+    background-position: center right 28%;
+    background-attachment: unset;
+  }
+
+  .mobile__btn-menu {
+    display: block;
+  }
+
+  .top__header-wrap {
+    padding: 10px 50px;
+  }
+
+  .header__logo-img {
+    height: 32px;
+    padding: 0;
+  }
+
+  .mobile__btn-menu {
+    font-size: 2.8rem;
+  }
+
+  .body__header {
+    padding-top: 125%;
+  }
+
+  .header__title {
+    width: 54%;
+    line-height: 4rem;
+    font-size: 4rem;
+    margin: auto;
+  }
+
+  .header__title span {
+    display: inline-block;
+  }
+
+  .header__label {
+    width: 84%;
+    font-size: 1.6rem;
+    line-height: 1.6rem;
+    margin: auto;
+    padding-top: 16px;
+  }
+
+  .header__search-wrap {
+    width: 80%;
+  }
+
+  .header__search {
+    margin: 20px 0;
+  }
+
+  .header-search__select {
+    background-color: var(--white-color);
+  }
+
+  .header-search__item {
+    margin: 6px 0;
+    width: 100%;
+  }
+
+  .header-search__item-link span {
+    font-size: 1.5rem;
+  }
+
+  .header-search__item-link {
+    padding: 8px 48px;
+  }
+
+  .container {
+    margin: 0 15px;
+  }
+
+  .travel__package-qnt {
+    font-size: 1.5rem;
+  }
+
+  .next-holiday__wrap {
+    padding-top: 100%;
+  }
+
+  .next-holiday__content {
+    flex-direction: column;
+    padding-top: 0;
+    position: absolute;
+    top: 6%;
+    left: 10%;
+  }
+
+  .next-holiday__title span {
+    display: block;
+  }
+
+  .next-holiday__btn {
+    left: 10%;
+  }
+
+  .aside__item-content {
+    width: 100%;
+  }
+
+  .contact__wrap {
+    margin: 0 30px;
+  }
+
+  .contact__form {
+    margin: 24px 0 0 0;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .contact__btn {
+    padding: 16px 40px;
+    margin-top: 10px;
+  }
+
+  .footer-content__wrap {
+    margin: 66px 15px 0;
+  }
+
+  .footer__copyright {
+    margin: 0 15px;
+  }
+
+  .contact__input {
+    width: 100%;
+  }
 }

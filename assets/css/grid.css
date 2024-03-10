@@ -12,8 +12,8 @@
 .row {
   display: flex;
   flex-wrap: wrap;
-  margin-left: -4px;
-  margin-right: -4px;
+  margin-left: -15px;
+  margin-right: -15px;
 }
 
 .row.no-gutters {
@@ -29,8 +29,8 @@ Prefix class:
 */
 
 .col {
-  padding-left: 4px;
-  padding-right: 4px;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
 .row.no-gutters .col {
@@ -149,13 +149,13 @@ Prefix class:
 /* >= Tablet */
 @media (min-width: 740px) {
   .row {
-    margin-left: -8px;
-    margin-right: -8px;
+    margin-left: -15px;
+    margin-right: -15px;
   }
 
   .col {
-    padding-left: 8px;
-    padding-right: 8px;
+    padding-left: 15px;
+    padding-right: 15px;
   }
 
   .m-0 {
@@ -285,8 +285,8 @@ Prefix class:
 /* PC medium resolution > */
 @media (min-width: 1113px) {
   .row {
-    margin-left: -12px;
-    margin-right: -12px;
+    margin-left: -15px;
+    margin-right: -15px;
   }
 
   .row.sm-gutter {
@@ -295,8 +295,8 @@ Prefix class:
   }
 
   .col {
-    padding-left: 12px;
-    padding-right: 12px;
+    padding-left: 15px;
+    padding-right: 15px;
   }
 
   .row.sm-gutter .col {
@@ -448,8 +448,8 @@ Prefix class:
   }
 
   .wide .row {
-    margin-left: -12px;
-    margin-right: -12px;
+    margin-left: -15px;
+    margin-right: -15px;
   }
 
   .wide .row.sm-gutter {
@@ -458,8 +458,8 @@ Prefix class:
   }
 
   .wide .col {
-    padding-left: 12px;
-    padding-right: 12px;
+    padding-left: 15px;
+    padding-right: 15px;
   }
 
   .wide .row.sm-gutter .col {

@@ -1,11 +1,14 @@
+.app {
+  overflow: hidden;
+}
 /* Header */
 .header {
   width: 100%;
-  padding-top: 60%;
+  padding-top: 46%;
   background-image: url("../img/background-header.jpg");
   background-attachment: fixed;
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: center top -150px;
   background-size: cover;
   filter: contrast(80%);
 }
@@ -112,7 +115,8 @@
   margin-left: 32px;
 }
 
-.header__btn-menu {
+.header__btn-menu,
+.mobile__btn-menu {
   border: none;
   background-color: transparent;
   font-size: 2.4rem;
@@ -120,8 +124,13 @@
   cursor: pointer;
 }
 
-.header__btn-menu-icon {
+.header__btn-menu-icon,
+.mobie__btn-menu-icon {
   color: rgb(178, 180, 181);
+}
+
+.mobile__btn-menu {
+  display: none;
 }
 
 .body__header {
@@ -169,7 +178,7 @@
 }
 
 .header__search {
-  margin-top: 54px;
+  margin: 54px 0;
   width: 370px;
   background-color: var(--white-color);
   border-radius: 25px;
@@ -177,7 +186,6 @@
   align-items: center;
   overflow: hidden;
   position: relative;
-  margin-bottom: 58px;
 }
 
 .header-search__select {
@@ -187,7 +195,7 @@
   border: none;
   outline: none;
   appearance: none;
-  padding: 10px 25px;
+  padding: 14px 25px;
   cursor: pointer;
 }
 
@@ -195,12 +203,13 @@
   border: none;
   background-color: var(--white-color);
   color: #a3a3a3;
-  padding: 9px 25px 4px;
+  padding: 14px 25px 4px;
   font-size: 2rem;
   cursor: pointer;
   position: absolute;
   top: 0;
   right: 0;
+  -webkit-tap-highlight-color: transparent;
 }
 
 .header-search__topic {
@@ -214,7 +223,7 @@
 .header-search__item {
   width: 112px;
   height: 105px;
-  background-color: rgba(0, 0, 0, 0.21);
+  background-color: rgba(0, 0, 0, 0.25);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -227,6 +236,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  -webkit-tap-highlight-color: transparent;
 }
 
 .header-search__item-img {
@@ -349,17 +359,35 @@
 .modal__travel {
   width: 262px;
   height: 262px;
-  display: flex;
   margin: 50px auto;
 }
 
 /* Travel section */
 .travel__section-item {
   --padding-value: 30px;
-  min-height: 262px;
-  max-height: 384px;
+  padding-top: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
   position: relative;
   margin: 15px 0;
+}
+
+.travel__section-item::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    to bottom,
+    rgba(101, 100, 96, 0) 0%,
+    rgba(101, 100, 96, 0.1) 60%,
+    rgba(101, 100, 96, 0.65) 100%
+  );
 }
 
 .travel__section-img {
@@ -507,17 +535,16 @@
 }
 
 .destinations__list {
-  display: flex;
   margin-top: 34px;
 }
 
 /* Next holiday */
 .next-holiday__wrap {
-  height: 235px;
   background-image: url(../img/next-holiday.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+  position: relative;
 }
 
 .next-holiday__content {
@@ -589,6 +616,7 @@
 }
 
 .best-beach__price-old {
+  font-size: 2.8rem;
   color: #dadada;
   text-decoration: line-through;
 }
@@ -921,9 +949,10 @@
 .contact__wrap {
   display: flex;
   align-items: center;
+  margin: 0 100px;
 }
 .contact__content {
-  margin-left: 200px;
+  margin-left: 70px;
 }
 
 .contact__label {
@@ -938,6 +967,11 @@
   font-weight: 600;
   color: #555;
   margin: 26px 0;
+}
+
+.contact__form {
+  display: flex;
+  margin: 24px 0 0 100px;
 }
 
 .contact__input {
@@ -969,7 +1003,7 @@
 .footer-content__wrap {
   margin-top: 66px;
   background-color: var(--white-color);
-  padding: 45px;
+  padding: 35px 30px;
 }
 
 .footer-travel {
@@ -1002,6 +1036,8 @@
 .footer-social__link {
   text-decoration: none;
   color: transparent;
+  display: block;
+  padding: 10px 6px;
 }
 
 .footer-social__icon {
