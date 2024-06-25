@@ -1,7 +1,7 @@
 // Load Header và Footer
 $(document).ready(function () {
-    $("#menu__header").load("../pages/header.html");
-    $("#footer").load("../pages/footer.html");
+    $("#menu__header").load("/pages/header.html");
+    $("#footer").load("/pages/footer.html");
 });
 
 // Xử lý Right Sidebar PC and Menu Tablet & Mobile
