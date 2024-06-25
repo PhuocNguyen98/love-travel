@@ -1,8 +1,3 @@
-// Load Header và Footer
-$(document).ready(function () {
-    $("#menu__header").load("/pages/header.html");
-    $("#footer").load("/pages/footer.html");
-});
 // Xử lý Right Sidebar PC and Menu Tablet & Mobile
 $(document).on('click', '.js-header__icon-bars', function (e) {
     e.preventDefault();
