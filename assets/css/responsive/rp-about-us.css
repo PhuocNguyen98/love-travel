@@ -1,0 +1,98 @@
+/* Kích thước màn hình dưới 1400px */
+@media (max-width: 87.4375em) {
+  .about-us__header-title {
+    left: 9%;
+  }
+
+  .about-us-staff__asisde-item {
+    margin: 5% 20%;
+  }
+}
+
+/* Kích thước màn hình dưới 1200px */
+@media (max-width: 74.9375em) {
+  .about-us__staff-list {
+    transform: unset;
+    margin: 30px 0;
+  }
+
+  .about-us__aside-bg {
+    padding-top: 34%;
+  }
+
+  .about-us__aside-item {
+    margin: 20px 0;
+  }
+}
+
+/* Kích thước màn hình dưới 992px */
+@media (max-width: 61.9375em) {
+  .about-us__header-title {
+    left: 4%;
+  }
+
+  .about-us__staff-bg {
+    padding-top: 55%;
+  }
+
+  .about-us-staff__asisde-item {
+    margin: 0 60px;
+    position: relative;
+    top: 70%;
+  }
+
+  .about-us__staff-item {
+    border: 1px solid #f1f1f1;
+    margin-bottom: 50px;
+  }
+
+  .about-us__aside-bg {
+    padding-top: 68%;
+  }
+}
+
+/* Kích thước màn hình dưới 768px */
+@media (max-width: 47.9375em) {
+  .about-us__header-title {
+    bottom: 0;
+    left: 0;
+    padding-left: 20px;
+  }
+  .about-us__desc-title,
+  .about-us__decs-content {
+    padding: 0 30px;
+  }
+
+  .about-us__video video {
+    padding: 0 30px;
+  }
+
+  .about-us__staff-item {
+    margin-right: 30px;
+    margin-left: 30px;
+    margin-bottom: 30px;
+  }
+  .about-us__staff-bg {
+    padding-top: 164%;
+  }
+
+  .about-us-staff__asisde-item {
+    top: 50%;
+  }
+
+  .about-us__aside-bg {
+    padding-top: 158%;
+  }
+
+  .about-us__services-list {
+    padding: 0 30px;
+  }
+
+  .about-us__services-item {
+    align-items: flex-start;
+  }
+
+  .about-us__services-img {
+    margin-top: 10px;
+  }
+}

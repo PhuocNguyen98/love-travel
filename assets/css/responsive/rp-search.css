@@ -1,0 +1,107 @@
+/* Kích thước màn hình dưới 1400px */
+@media (max-width: 87.4375em) {
+  .search__header .header__background {
+    padding-top: 50%;
+  }
+}
+/* Tablet and Mobile */
+@media (max-width: 63.9375em) {
+  .search__header .header__background {
+    padding-top: 60%;
+  }
+
+  .page-search__wrap {
+    position: relative;
+    top: 0;
+    left: 0;
+    transform: unset;
+    margin-top: -12%;
+    z-index: 1;
+  }
+
+  .page-search__form-wrap {
+    background-color: transparent;
+  }
+
+  .page-search__form-wrap {
+    display: block;
+  }
+
+  .more-filters__wrap:hover .more-filters__content {
+    display: block;
+    border: 1px solid #f1f1f1;
+    padding: 35px;
+  }
+
+  .more-filters__item {
+    margin-bottom: 24px;
+  }
+
+  .more-filters__item:last-child {
+    margin-bottom: 0;
+  }
+
+  .aside-filter__wrap {
+    display: none;
+  }
+}
+
+/* Tablet */
+@media (max-width: 63.9375em) and (min-width: 46.25em) {
+  .page-search__heading.heading__content {
+    margin-bottom: 0px;
+  }
+}
+
+/* Mobile */
+@media (max-width: 46.1875em) {
+  .search__header .header__background {
+    padding-top: 120%;
+  }
+
+  .page-search__heading {
+    padding: 0 15px;
+    margin-bottom: 0;
+  }
+
+  .page-search__heading span {
+    text-align: left;
+  }
+
+  .page-search__heading span + span {
+    margin-left: 15px;
+  }
+
+  .page-search__wrap {
+    margin-top: -32%;
+  }
+
+  .more-filters__content {
+    width: calc(100vw - 120px);
+  }
+
+  .search__container > .search__list {
+    margin-left: 30px;
+    margin-right: 30px;
+  }
+
+  .aside-filter__wrap {
+    display: none;
+  }
+
+  .travel__list--display-list .travel__item-img > img {
+    width: 100%;
+  }
+
+  .travel__list--display-list .travel__item-details {
+    flex-direction: column-reverse;
+  }
+
+  .travel__list--display-list .travel__item-content {
+    padding: 20px;
+  }
+
+  .travel__list--display-list .travel__item-btn {
+    margin-top: 12px;
+  }
+}

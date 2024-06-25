@@ -1,0 +1,39 @@
+/* Kích thước màn hình dưới 1200px */
+@media (max-width: 74.9375em) {
+  .tags__header-title {
+    left: 48px;
+  }
+  .tags__list-wrap {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: unset;
+  }
+
+  .tags__list-wrap .tags__item:nth-child(n) {
+    grid-column: unset;
+    grid-row: unset;
+  }
+
+  .tags__item {
+    grid-template-rows: repeat(1, 1fr);
+  }
+}
+
+/* Kích thước màn hình dưới 768px */
+@media (max-width: 47.9375em) {
+  .tags__header-title {
+    left: 24px;
+  }
+
+  .tags__list-wrap {
+    grid-template-columns: repeat(1, 1fr);
+    margin-right: 30px;
+    margin-left: 30px;
+  }
+
+  .tags__item {
+    grid-template-rows: unset;
+    display: flex;
+    flex-direction: column;
+  }
+}

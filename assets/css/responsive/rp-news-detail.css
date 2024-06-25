@@ -1,0 +1,29 @@
+@media (max-width: 47.9375em) {
+  .news-detail__title {
+    padding: 0 30px;
+  }
+
+  .new-detail__desc {
+    padding: 20px 30px;
+  }
+
+  .news-detail__img {
+    padding: 0 30px;
+  }
+
+  .tags__content {
+    padding: 0 30px;
+  }
+
+  .tags__list {
+    flex-wrap: wrap;
+  }
+
+  .tags__item {
+    margin-top: 10px;
+  }
+
+  .tags__item-link {
+    padding: 12px 14px;
+  }
+}

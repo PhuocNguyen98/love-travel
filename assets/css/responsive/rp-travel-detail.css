@@ -1,0 +1,122 @@
+/* Kích thước màn hình dưới 1200px */
+@media (max-width: 74.9375em) {
+  .travel-detail__aside-item {
+    justify-content: center;
+  }
+
+  .travel-detail__form-wrap {
+    margin: 48px 0;
+  }
+}
+
+/* Kích thước dưới 992px */
+@media (max-width: 61.9375em) {
+  .travel-desc__aside-item {
+    padding: 20px 0;
+  }
+}
+
+/* Kích thước dưới 739px */
+@media (max-width: 46.1875em) {
+  .travel-detail__location-time {
+    margin-left: 30px;
+  }
+  .travel-detail__thumbnail {
+    display: none;
+  }
+
+  .travel-detail__content {
+    margin-top: 0;
+    padding: 0 30px;
+  }
+
+  .travel-detail__menu-list {
+    flex-wrap: wrap;
+  }
+
+  .travel-detail__menu-item {
+    margin-top: 15px;
+  }
+
+  .travel-detail__aside {
+    padding: 20px 0;
+  }
+
+  .travel-detail__aside-item {
+    justify-content: flex-start;
+    margin-bottom: 16px;
+  }
+
+  .travel-desc__aside-item {
+    padding: 20px 0;
+  }
+
+  .travel-detail__slides-previous,
+  .travel-detail__slides-next {
+    font-size: 3rem;
+  }
+
+  .travel-detail__slides-item span {
+    font-size: 1.6rem;
+  }
+
+  .travel-detail__slides-caption p {
+    font-size: 1.6rem;
+  }
+
+  .travel-detail__form-wrap {
+    margin: 48px 0 18px;
+  }
+
+  .travel-detail__form-content div:first-child {
+    display: block;
+  }
+
+  .travel-desc__aside-title {
+    display: block;
+    padding-bottom: 12px;
+  }
+
+  .travel-desc__aside-label {
+    margin: 0 15px;
+  }
+
+  .travel-desc__aside-label span {
+    display: block;
+    padding-bottom: 12px;
+  }
+
+  .travel-detail__gallery-content {
+    grid-template-columns: none;
+    grid-template-rows: none;
+    grid-gap: 10px;
+  }
+
+  .travel-detail__gallery-item--1 {
+    grid-column: unset;
+  }
+
+  .travel-detail__gallery-item--2 {
+    grid-column: unset;
+  }
+
+  .travel-detail__gallery-item--3 {
+    grid-column: unset;
+  }
+
+  .travel-detail__gallery-item--4 {
+    grid-column: unset;
+  }
+
+  .travel-detail__program-list {
+    margin: 0;
+  }
+
+  .travel-detail__program-collapse {
+    display: block;
+  }
+
+  .travel-detail__program-aside p {
+    padding: 6px 0 0 60px;
+  }
+}

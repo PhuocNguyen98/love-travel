@@ -1,0 +1,405 @@
+/* Kích thước màn hình dưới 1400px */
+@media (max-width: 87.4375em) {
+  .header__background {
+    padding-top: 55%;
+  }
+
+  .header__background.page-header__background {
+    padding-top: 22%;
+  }
+}
+
+/* Kích thước màn hình dưới 1200px */
+@media (max-width: 74.9375em) {
+  .header__background {
+    padding-top: 65%;
+  }
+
+  .header__background.page-header__background {
+    padding-top: 26%;
+  }
+
+  .header__logo {
+    margin-right: 20px;
+  }
+
+  .menu > .menu-item > .menu-item__link {
+    padding: 8px 16px;
+  }
+}
+
+/* PC kích thước màn hình từ 1024px */
+@media (min-width: 64em) {
+  /* Hiển thị danh sách theo dạng List */
+
+  .travel__list--display-list .travel__item {
+    display: flex;
+  }
+
+  .travel__list--display-list .travel__item-img > img {
+    width: 230px;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .travel__list--display-list .travel__item-img a {
+    display: none;
+  }
+
+  .travel__list--display-list .travel__item-aside {
+    display: none;
+  }
+
+  .travel__list--display-list .travel__item-details {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .travel__list--display-list .travel__item-sales {
+    right: unset;
+    left: 20px;
+  }
+}
+/* Tablet and Mobile */
+@media (max-width: 63.9375em) {
+  .menu__header {
+    background-color: rgba(0, 0, 0, 0.3);
+  }
+
+  .menu__header-content {
+    flex-direction: column;
+    padding: 20px 60px;
+  }
+
+  .header__logo {
+    margin-right: 0;
+  }
+
+  .header__icon-bars {
+    padding: 12px;
+    margin-left: 20px;
+    margin-top: 12px;
+  }
+
+  .header .menu {
+    display: none;
+  }
+
+  /* Menu Tablet and Mobile */
+  .menu__tablet-mobile {
+    display: block;
+    width: 300px;
+    background-color: rgb(85, 85, 85);
+    position: fixed;
+    top: 0;
+    right: -300px;
+    bottom: 0;
+    overflow-y: scroll;
+    transition: right ease 0.8s;
+    will-change: right;
+    z-index: 99;
+  }
+
+  .menu__tablet-mobile.show {
+    right: 0;
+  }
+
+  .tablet-mobile__icon-close {
+    font-size: 2.6rem;
+    color: var(--white-color);
+    float: right;
+    padding: 12px 10px;
+    margin: 10px;
+    cursor: pointer;
+  }
+
+  .menu-tablet-mobile__content {
+    margin: 48px 0;
+  }
+
+  .menu-tablet-mobile-list,
+  .submenu__tablet-mobile {
+    list-style: none;
+  }
+
+  .menu-tablet-mobile__item {
+    margin-bottom: 12px;
+  }
+
+  .menu-tablet-mobile__item a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: var(--white-color);
+    font-size: 2.4rem;
+    line-height: 2.4rem;
+    font-weight: 600;
+    display: block;
+    padding: 12px 24px;
+  }
+
+  .submenu-tablet-mobile__item > a {
+    font-size: 1.4rem;
+    font-weight: unset;
+    padding: 10px 24px;
+  }
+
+  .right__sidebar {
+    display: none;
+  }
+
+  .travel__list--display-list {
+    display: none;
+  }
+
+  /* Header Search */
+  .header-search__topic-list {
+    flex-direction: column;
+  }
+
+  .header-search__topic-item {
+    max-width: unset;
+  }
+
+  .next-holiday__content {
+    flex-direction: column;
+  }
+}
+
+/* Tablet */
+@media (min-width: 46.25em) and (max-width: 63.9375em) {
+  .header__background {
+    padding-top: 150%;
+  }
+
+  .header__background.page-header__background {
+    padding-top: 40%;
+  }
+
+  .header-search__content {
+    padding-top: 20%;
+  }
+
+  .header-search__form {
+    width: 100%;
+  }
+
+  .header-search__topic-item {
+    margin-right: 0;
+    margin-top: 24px;
+  }
+
+  .header-search__topic-item:first-child {
+    margin-top: 0;
+  }
+
+  .next-holiday__section {
+    height: unset;
+    padding-top: 22%;
+  }
+
+  .next-holiday__title {
+    transform: translate(-42%, -24%);
+  }
+
+  .best-beach__btn-book {
+    margin-bottom: 24px;
+  }
+
+  .best-beach__aside {
+    margin-top: 14%;
+  }
+
+  .best-beach__aside-item {
+    margin-bottom: 24px;
+  }
+
+  .travel__contact {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .travel__form {
+    margin-top: 12px;
+    width: 100%;
+  }
+
+  .travel-contact__input {
+    width: 80%;
+  }
+}
+
+/* Mobile */
+@media (max-width: 46.1875em) {
+  .header__background {
+    padding-top: 350%;
+  }
+
+  .header__background.page-header__background {
+    padding-top: 75%;
+  }
+  .header__title {
+    padding-left: 30px;
+    padding-bottom: 15px;
+  }
+
+  .header-search__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 50%;
+  }
+
+  .header-search__title,
+  .header-search__label {
+    width: 70%;
+  }
+
+  .header-search__form {
+    left: 0;
+    transform: none;
+    width: 70%;
+    margin: 40px 0;
+  }
+
+  .header-search__topic-item {
+    margin: 15px 0;
+  }
+
+  .header-search__topic-link {
+    padding: 20px 96px;
+  }
+
+  .heading__title {
+    text-align: center;
+  }
+
+  .heading__title > h3 {
+    display: block;
+  }
+
+  .heading__content {
+    margin: 60px 30px 30px;
+  }
+
+  .destination__list {
+    margin: 0 30px;
+  }
+
+  .next-holiday__section {
+    height: unset;
+    padding-top: 40%;
+    margin-bottom: 0;
+  }
+
+  .next-holiday__title {
+    margin-right: 25%;
+    margin-left: 40px;
+  }
+
+  .next-holiday__title h3 {
+    display: block;
+  }
+
+  .next-holiday__btn {
+    transform: translateY(32px);
+  }
+
+  .best-beach__wrap {
+    margin: 0 30px;
+  }
+
+  .best-beach__aside {
+    padding: 0 30px;
+  }
+  .best-beach__heading {
+    align-items: center;
+  }
+
+  .best-beach__title h3 {
+    display: inline-block;
+  }
+
+  .best-beach__img {
+    padding-top: 75%;
+  }
+  .best-beach__btn-book {
+    margin-bottom: 32px;
+  }
+
+  .best-beach__times {
+    position: unset;
+    transform: unset;
+  }
+
+  .best-beach__times-list {
+    display: unset;
+  }
+
+  .best-beach__times-item {
+    padding: 12px 0;
+  }
+
+  .best-beach__times-item::after {
+    display: none;
+  }
+
+  .best-beach__aside-item {
+    margin-bottom: 32px;
+  }
+
+  .discover__item-cotent {
+    width: 100%;
+  }
+
+  .discover__item {
+    padding-top: 65%;
+  }
+
+  .travel__list {
+    padding: 0 30px;
+  }
+
+  .travel__item-aside {
+    flex-wrap: wrap;
+  }
+
+  .travel__contact {
+    flex-direction: column;
+  }
+
+  .travel__form {
+    text-align: center;
+    width: 100%;
+    margin-top: 18px;
+  }
+
+  .travel-contact__input {
+    width: 80%;
+  }
+
+  .travel-contact__btn {
+    margin: 12px 0 0 0;
+    padding: 14px 44px;
+  }
+
+  .footer__aside,
+  .footer__copyright {
+    margin-left: 30px;
+    margin-right: 30px;
+  }
+
+  .footer__copyright {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer__copyright span + span {
+    margin-top: 12px;
+  }
+
+  /* Paginations */
+  .pagination__item {
+    margin: 0;
+  }
+}

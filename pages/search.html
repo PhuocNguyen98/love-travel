@@ -1,0 +1,1069 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Search - Love Travel</title>
+    <!-- Link Favicon -->
+    <link rel="icon" type="image/x-icon" href="#../assets/img/favicon.png" />
+    <!-- Link CSS -->
+    <link
+      rel="stylesheet"
+      href="../vendor/normalize-v8.0.1/normalize.min.css"
+    />
+    <link rel="stylesheet" href="../assets/css/base.css" />
+    <link rel="stylesheet" href="../assets/css/main.css" />
+    <link rel="stylesheet" href="../assets/css/search.css" />
+    <link rel="stylesheet" href="../assets/css/responsive/responsive.css" />
+    <link rel="stylesheet" href="../assets/css/responsive/rp-search.css" />
+    <link
+      rel="stylesheet"
+      href="../vendor/bootstrap-v5.3.3/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="../vendor/font-awesone-v6.5.2/css/all.min.css"
+    />
+    <!-- Link Font Google -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Link Javascript -->
+    <script src="../vendor/jquery/jquery-3.7.1.min.js"></script>
+    <script src="../assets/js/main.js"></script>
+  </head>
+  <body>
+    <div class="search__wrap">
+      <!-- Header -->
+      <header class="header search__header">
+        <div
+          class="header__background"
+          style="background-image: url(../assets/img/home/bg-next-holiday.jpg)"
+        ></div>
+        <!-- Menu Header -->
+        <div id="menu__header" class="menu__header search__menu-header"></div>
+
+        <!-- Search Content -->
+        <div class="page-search__wrap container">
+          <div class="heading__content page-search__heading mt-0">
+            <span class="heading__label text-uppercase">Our Packages</span>
+            <span class="heading__title page-search__title">
+              Search Your
+              <h2 class="text__underlined" style="--clr: #e27557">Holiday</h2>
+            </span>
+          </div>
+          <div class="page-search__form-wrap">
+            <div class="search-form__group">
+              <label class="search-form__label" for=""
+                >Select Your Destination:</label
+              >
+              <div class="search-form__select">
+                <select name="" id="search-form__destinations">
+                  <option value="-1">All Destinations</option>
+                  <option value="1">Europe</option>
+                  <option value="2">&nbsp;&nbsp;- Italy</option>
+                  <option value="3">&nbsp;&nbsp;- Nertherlands</option>
+                  <option value="4">Asia</option>
+                  <option value="5">&nbsp;&nbsp;- Thailandia</option>
+                  <option value="6">United States</option>
+                  <option value="7">Oceania</option>
+                </select>
+                <i
+                  class="search-form__select-icon fa-solid fa-location-dot"
+                ></i>
+              </div>
+            </div>
+            <div class="search-form__group">
+              <label for="" class="search-form__label">Select Your Date:</label>
+              <input
+                type="date"
+                name=""
+                id=""
+                class="search-form__input-date"
+              />
+            </div>
+            <div class="search-form__group">
+              <div class="search-form__price">
+                <label for="" class="search-form__label">Max Price:</label>
+                <div class="search-form__price-current">
+                  <span class="js-search-form__price-current">0</span>
+                  <span> $</span>
+                </div>
+              </div>
+              <input
+                type="range"
+                name=""
+                id=""
+                class="search-form__price-range js-search-form__price-range"
+                min="0"
+                max="9999"
+              />
+              <div class="search-form__group">
+                <input
+                  type="checkbox"
+                  name=""
+                  id="promotions1"
+                  class="search-form__checkbox"
+                />
+                <label for="promotions" class="search-form__checkbox-label">
+                  See only promotions</label
+                >
+              </div>
+            </div>
+            <div class="more-filters__wrap">
+              <i class="more-filters__icon fa-solid fa-filter"></i>
+              <span class="more-filters__label">More Filters</span>
+              <div class="more-filters__content">
+                <div class="more-filters__item">
+                  <h5 class="more-filters__item-title">Typologies</h5>
+                  <ul class="filters-item__list">
+                    <li class="filters__item">
+                      <input type="checkbox" name="" id="relax" />
+                      <label for="relax">Relax</label>
+                    </li>
+                    <li class="filters__item">
+                      <input type="checkbox" name="" id="cultural" />
+                      <label for="cultural">Cultural</label>
+                    </li>
+                    <li class="filters__item">
+                      <input type="checkbox" name="" id="sport" />
+                      <label for="sport">Sport</label>
+                    </li>
+                    <li class="filters__item">
+                      <input type="checkbox" name="" id="history" />
+                      <label for="history">History</label>
+                    </li>
+                  </ul>
+                </div>
+                <div class="more-filters__item">
+                  <h5 class="more-filters__item-title">Durations</h5>
+                  <ul class="filters-item__list">
+                    <li class="filters__item">
+                      <input type="checkbox" name="" id="13" />
+                      <label for="13">1 - 3 Days</label>
+                    </li>
+                    <li class="filters__item">
+                      <input type="checkbox" name="" id="36" />
+                      <label for="36">3 - 6 Days</label>
+                    </li>
+                    <li class="filters__item">
+                      <input type="checkbox" name="" id="69" />
+                      <label for="69">6 - 9 Days</label>
+                    </li>
+                    <li class="filters__item">
+                      <input type="checkbox" name="" id="912" />
+                      <label for="912">9 - 12 Days </label>
+                    </li>
+                  </ul>
+                </div>
+                <div class="more-filters__item">
+                  <h5 class="more-filters__item-title">Difficulty</h5>
+                  <ul class="filters-item__list">
+                    <li class="filters__item">
+                      <input type="checkbox" name="" id="high" />
+                      <label for="high">High</label>
+                    </li>
+                    <li class="filters__item">
+                      <input type="checkbox" name="" id="low" />
+                      <label for="low">Low</label>
+                    </li>
+                    <li class="filters__item">
+                      <input type="checkbox" name="" id="medium" />
+                      <label for="medium">Medium</label>
+                    </li>
+                  </ul>
+                </div>
+                <div class="more-filters__item">
+                  <h5 class="more-filters__item-title">Min Age</h5>
+                  <ul class="filters-item__list">
+                    <li class="filters__item">
+                      <input type="checkbox" name="" id="10" />
+                      <label for="10">10 Years</label>
+                    </li>
+                    <li class="filters__item">
+                      <input type="checkbox" name="" id="18" />
+                      <label for="18">18 Years</label>
+                    </li>
+                    <li class="filters__item">
+                      <input type="checkbox" name="" id="3" />
+                      <label for="3">3 Years</label>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="aside-filter__wrap">
+              <div class="arrange__content">
+                <div class="arrange__price">
+                  <span class="arrange__title"
+                    >Price
+                    <i class="arrange__title-icon fa-solid fa-angle-down"></i>
+                  </span>
+                  <ul class="arrange__list">
+                    <li class="arrange__item">
+                      <a href=" #">Lowest Price</a>
+                    </li>
+                    <li class="arrange__item">
+                      <a href=" #">Highest Price</a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="arrange__name">
+                  <span class="arrange__title"
+                    >Name
+                    <i class="arrange__title-icon fa-solid fa-angle-down"></i>
+                  </span>
+                  <ul class="arrange__list">
+                    <li class="arrange__item">
+                      <a href=" #">DESC</a>
+                    </li>
+                    <li class="arrange__item">
+                      <a href=" #">ASC</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="filters__display">
+                <!-- Class: filters-display__icon--active -> danh sách đang được hiển thị ở  -->
+                <i
+                  data-display="list"
+                  class="filters-display__icon filters-display__list js-filters__display fa-solid fa-list"
+                ></i>
+                <i
+                  data-display="grid"
+                  class="filters-display__icon filters-display__grid js-filters__display fa-solid fa-border-none"
+                ></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+      <!-- Search Container -->
+      <div class="search__container container">
+        <div class="search__list">
+          <!-- Danh sách hiển thị theo dạng Grid -->
+          <div class="search-display__grid">
+            <div class="row gy-5">
+              <div
+                class="col-xxl-4 col-xl-4 col-lg-12 col-md-12 col-sm-12 gx-5"
+              >
+                <div class="travel__item">
+                  <div class="travel__item-img">
+                    <img
+                      src="../assets/img/packages/berlin.jpg"
+                      alt="Berlin"
+                      class=""
+                    />
+                    <a href="#" class="bg--yellow-to-orange">
+                      <img src="../assets/img/icon/arch.png" alt="" />
+                    </a>
+                  </div>
+                  <div class="travel__item-content">
+                    <a href="#" class="travel__item-name">
+                      <h3>Berlin</h3>
+                    </a>
+                    <a href="#" class="travel__item-location">
+                      <i
+                        class="travel__item-location-icon fa-solid fa-location-dot"
+                      ></i>
+                      <h4>Europe</h4>
+                    </a>
+                    <div class="travel__item-aside">
+                      <div class="aside__typologies">
+                        <div class="aside__typologies-item">
+                          <a href="#" class="aside-typologies__item-link">
+                            <h3>Cultural</h3>
+                          </a>
+                        </div>
+                        <div class="aside__typologies-item">
+                          <a href="#" class="aside-typologies__item-link">
+                            <h3>Relax</h3>
+                          </a>
+                          <span
+                            class="aside-typologies__item-qnt"
+                            style="--clr: #ffd205"
+                            >+ 1</span
+                          >
+                        </div>
+                      </div>
+                      <div class="aside__price">
+                        <span class="aside__price-current">700</span>
+                        <span>$</span>
+                      </div>
+                    </div>
+                    <p class="travel__item-desc">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                      Nunc ut efficitur ante. Donec dapibus dictum scelerisque.
+                    </p>
+                    <a href="#" class="travel__item-btn" style="--clr: #ffd205"
+                      >Details</a
+                    >
+                  </div>
+                </div>
+              </div>
+              <div
+                class="col-xxl-4 col-xl-4 col-lg-12 col-md-12 col-sm-12 gx-5"
+              >
+                <div class="travel__item">
+                  <div class="travel__item-img">
+                    <img
+                      src="../assets/img/packages/hongkong.jpg"
+                      alt="Hong Kong"
+                      class=""
+                    />
+                    <a href="#" class="bg--red-to-orange">
+                      <img src="../assets/img/icon/torii-gate.png" alt="" />
+                    </a>
+                  </div>
+                  <div class="travel__item-content">
+                    <a href="#" class="travel__item-name">
+                      <h3>Hong Kong</h3>
+                    </a>
+                    <a href="#" class="travel__item-location">
+                      <i
+                        class="travel__item-location-icon fa-solid fa-location-dot"
+                      ></i>
+                      <h4>Asia</h4>
+                    </a>
+                    <div class="travel__item-aside">
+                      <div class="aside__typologies">
+                        <div class="aside__typologies-item">
+                          <a href="#" class="aside-typologies__item-link">
+                            <h3>History</h3>
+                          </a>
+                        </div>
+                        <div class="aside__typologies-item">
+                          <a href="#" class="aside-typologies__item-link">
+                            <h3>Cultural</h3>
+                          </a>
+                          <span
+                            class="aside-typologies__item-qnt"
+                            style="--clr: #f76570"
+                            >+ 1</span
+                          >
+                        </div>
+                      </div>
+                      <div class="aside__price">
+                        <span class="aside__price-old">1000</span>
+                        <span class="aside__price-current">500</span>
+                        <span>$</span>
+                      </div>
+                    </div>
+                    <p class="travel__item-desc">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                      Nunc ut efficitur ante. Donec dapibus dictum scelerisque.
+                    </p>
+                    <a href="#" class="travel__item-btn" style="--clr: #f76570"
+                      >Details</a
+                    >
+                  </div>
+                  <a href="#" class="travel__item-sales">Sale</a>
+                </div>
+              </div>
+              <div
+                class="col-xxl-4 col-xl-4 col-lg-12 col-md-12 col-sm-12 gx-5"
+              >
+                <div class="travel__item">
+                  <div class="travel__item-img">
+                    <img
+                      src="../assets/img/packages/sanfrancisco.jpg"
+                      alt="San Francisco"
+                      class=""
+                    />
+                    <a href="#" class="bg--purple-to-red">
+                      <img src="../assets/img/icon/golden-gate.png" alt="" />
+                    </a>
+                  </div>
+                  <div class="travel__item-content">
+                    <a href="#" class="travel__item-name">
+                      <h3>San Francisco</h3>
+                    </a>
+                    <a href="#" class="travel__item-location">
+                      <i
+                        class="travel__item-location-icon fa-solid fa-location-dot"
+                      ></i>
+                      <h4>United States</h4>
+                    </a>
+                    <div class="travel__item-aside">
+                      <div class="aside__typologies">
+                        <div class="aside__typologies-item">
+                          <a href="#" class="aside-typologies__item-link">
+                            <h3>Sport</h3>
+                          </a>
+                        </div>
+                        <div class="aside__typologies-item">
+                          <a href="#" class="aside-typologies__item-link">
+                            <h3>Relax</h3>
+                          </a>
+                          <span
+                            class="aside-typologies__item-qnt"
+                            style="--clr: #ba71da"
+                            >+ 1</span
+                          >
+                        </div>
+                      </div>
+                      <div class="aside__price">
+                        <span class="aside__price-current">400</span>
+                        <span>$</span>
+                      </div>
+                    </div>
+                    <p class="travel__item-desc">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                      Nunc ut efficitur ante. Donec dapibus dictum scelerisque.
+                    </p>
+                    <a href="#" class="travel__item-btn" style="--clr: #ba71da"
+                      >Details</a
+                    >
+                  </div>
+                </div>
+              </div>
+              <div
+                class="col-xxl-4 col-xl-4 col-lg-12 col-md-12 col-sm-12 gx-5"
+              >
+                <div class="travel__item">
+                  <div class="travel__item-img">
+                    <img
+                      src="../assets/img/packages/phuket.jpg"
+                      alt="Phuket"
+                      class=""
+                    />
+                    <a href="#" class="bg--blue-to-light-blue">
+                      <img src="../assets/img/icon/buddha.png" alt="" />
+                    </a>
+                  </div>
+                  <div class="travel__item-content">
+                    <a href="#" class="travel__item-name">
+                      <h3>Phuket</h3>
+                    </a>
+                    <a href="#" class="travel__item-location">
+                      <i
+                        class="travel__item-location-icon fa-solid fa-location-dot"
+                      ></i>
+                      <h4>Thailandia</h4>
+                    </a>
+                    <div class="travel__item-aside">
+                      <div class="aside__typologies">
+                        <div class="aside__typologies-item">
+                          <a href="#" class="aside-typologies__item-link">
+                            <h3>Relax</h3>
+                          </a>
+                        </div>
+                        <div class="aside__typologies-item">
+                          <a href="#" class="aside-typologies__item-link">
+                            <h3>Cultural</h3>
+                          </a>
+                          <span
+                            class="aside-typologies__item-qnt"
+                            style="--clr: #14b9d5"
+                            >+ 1</span
+                          >
+                        </div>
+                      </div>
+                      <div class="aside__price">
+                        <span class="aside__price-current">1200</span>
+                        <span>$</span>
+                      </div>
+                    </div>
+                    <p class="travel__item-desc">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                      Nunc ut efficitur ante. Donec dapibus dictum scelerisque.
+                    </p>
+                    <a href="#" class="travel__item-btn" style="--clr: #14b9d5"
+                      >Details</a
+                    >
+                  </div>
+                </div>
+              </div>
+              <div
+                class="col-xxl-4 col-xl-4 col-lg-12 col-md-12 col-sm-12 gx-5"
+              >
+                <div class="travel__item">
+                  <div class="travel__item-img">
+                    <img
+                      src="../assets/img/packages/amsterdam.jpg"
+                      alt="Amsterdam"
+                      class=""
+                    />
+                    <a href="#" class="bg--orange-to-light-orange">
+                      <img src="../assets/img/icon/london-eye.png" alt="" />
+                    </a>
+                  </div>
+                  <div class="travel__item-content">
+                    <a href="#" class="travel__item-name">
+                      <h3>Amsterdam</h3>
+                    </a>
+                    <a href="#" class="travel__item-location">
+                      <i
+                        class="travel__item-location-icon fa-solid fa-location-dot"
+                      ></i>
+                      <h4>Nertherlands</h4>
+                    </a>
+                    <div class="travel__item-aside">
+                      <div class="aside__typologies">
+                        <div class="aside__typologies-item">
+                          <a href="#" class="aside-typologies__item-link">
+                            <h3>History</h3>
+                          </a>
+                        </div>
+                        <div class="aside__typologies-item">
+                          <a href="#" class="aside-typologies__item-link">
+                            <h3>Sport</h3>
+                          </a>
+                          <span
+                            class="aside-typologies__item-qnt"
+                            style="--clr: #f3a46b"
+                            >+ 1</span
+                          >
+                        </div>
+                      </div>
+                      <div class="aside__price">
+                        <!-- <span class="aside__price-old">1000</span> -->
+                        <span class="aside__price-current">1500</span>
+                        <span>$</span>
+                      </div>
+                    </div>
+                    <p class="travel__item-desc">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                      Nunc ut efficitur ante. Donec dapibus dictum scelerisque.
+                    </p>
+                    <a href="#" class="travel__item-btn" style="--clr: #f3a46b"
+                      >Details</a
+                    >
+                  </div>
+                  <!-- <a href="#" class="travel__item-sales">Sale</a> -->
+                </div>
+              </div>
+              <div
+                class="col-xxl-4 col-xl-4 col-lg-12 col-md-12 col-sm-12 gx-5"
+              >
+                <div class="travel__item">
+                  <div class="travel__item-img">
+                    <img
+                      src="../assets/img/packages/tuscany.jpg"
+                      alt="Tuscany"
+                      class=""
+                    />
+                    <a href="#" class="bg--green-to-light-green">
+                      <img src="../assets/img/icon/pisa.png" alt="" />
+                    </a>
+                  </div>
+                  <div class="travel__item-content">
+                    <a href="#" class="travel__item-name">
+                      <h3>Tuscany</h3>
+                    </a>
+                    <a href="#" class="travel__item-location">
+                      <i
+                        class="travel__item-location-icon fa-solid fa-location-dot"
+                      ></i>
+                      <h4>Italy</h4>
+                    </a>
+                    <div class="travel__item-aside">
+                      <div class="aside__typologies">
+                        <div class="aside__typologies-item">
+                          <a href="#" class="aside-typologies__item-link">
+                            <h3>Sport</h3>
+                          </a>
+                        </div>
+                        <div class="aside__typologies-item">
+                          <a href="#" class="aside-typologies__item-link">
+                            <h3>Relax</h3>
+                          </a>
+                          <span
+                            class="aside-typologies__item-qnt"
+                            style="--clr: #1bbc9b"
+                            >+ 1</span
+                          >
+                        </div>
+                      </div>
+                      <div class="aside__price">
+                        <span class="aside__price-old">950</span>
+                        <span class="aside__price-current">730</span>
+                        <span>$</span>
+                      </div>
+                    </div>
+                    <p class="travel__item-desc">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                      Nunc ut efficitur ante. Donec dapibus dictum scelerisque.
+                    </p>
+                    <a href="#" class="travel__item-btn" style="--clr: #1bbc9b"
+                      >Details</a
+                    >
+                  </div>
+                  <a href="#" class="travel__item-sales">Sale</a>
+                </div>
+              </div>
+            </div>
+            <!-- Phân trang -->
+            <div class="pagination__content">
+              <i class="pagination__icon-previous fa-solid fa-chevron-left"></i>
+              <ul class="pagination__list">
+                <!-- Class: pagination__item--active => trang đang hiển thị -->
+                <li class="pagination__item pagination__item--active">
+                  <a href="#" class="pagination__item-link">1</a>
+                </li>
+                <li class="pagination__item">
+                  <a href="#" class="pagination__item-link">2</a>
+                </li>
+                <li class="pagination__item">
+                  <a href="#" class="pagination__item-link">...</a>
+                </li>
+                <li class="pagination__item">
+                  <a href="#" class="pagination__item-link">9</a>
+                </li>
+                <li class="pagination__item">
+                  <a href="#" class="pagination__item-link">10</a>
+                </li>
+              </ul>
+              <i class="pagination__icon-next fa-solid fa-chevron-right"></i>
+            </div>
+          </div>
+          <!-- Danh sách hiển thị theo dạng List ở màn hình trên 1024px  -->
+          <!-- Class : travel__list--display-list -->
+          <div class="search-display__list travel__list--display-list">
+            <div class="row gy-5">
+              <div
+                class="col-xxl-6 col-xl-6 col-lg-12 col-md-12 col-sm-12 gx-5"
+              >
+                <div class="travel__item">
+                  <div class="travel__item-img">
+                    <img
+                      src="../assets/img/packages/berlin.jpg"
+                      alt="Berlin"
+                      class=""
+                    />
+                    <a href="#" class="bg--yellow-to-orange">
+                      <img src="../assets/img/icon/arch.png" alt="" />
+                    </a>
+                  </div>
+                  <div class="travel__item-content">
+                    <a href="#" class="travel__item-name">
+                      <h3>Berlin</h3>
+                    </a>
+                    <a href="#" class="travel__item-location">
+                      <i
+                        class="travel__item-location-icon fa-solid fa-location-dot"
+                      ></i>
+                      <h4>Europe</h4>
+                    </a>
+                    <div class="travel__item-aside">
+                      <div class="aside__typologies">
+                        <div class="aside__typologies-item">
+                          <a href="#" class="aside-typologies__item-link">
+                            <h3>Cultural</h3>
+                          </a>
+                        </div>
+                        <div class="aside__typologies-item">
+                          <a href="#" class="aside-typologies__item-link">
+                            <h3>Relax</h3>
+                          </a>
+                          <span
+                            class="aside-typologies__item-qnt"
+                            style="--clr: #ffd205"
+                            >+ 1</span
+                          >
+                        </div>
+                      </div>
+                      <div class="aside__price">
+                        <span class="aside__price-current">700</span>
+                        <span>$</span>
+                      </div>
+                    </div>
+                    <p class="travel__item-desc">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                      Nunc ut efficitur ante. Donec dapibus dictum scelerisque.
+                    </p>
+                    <div class="travel__item-details">
+                      <a
+                        href="#"
+                        class="travel__item-btn"
+                        style="--clr: #ffd205"
+                        >Details</a
+                      >
+                      <div class="aside__price">
+                        <span class="aside__price-current">700</span>
+                        <span>$</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="col-xxl-6 col-xl-6 col-lg-12 col-md-12 col-sm-12 gx-5"
+              >
+                <div class="travel__item">
+                  <div class="travel__item-img">
+                    <img
+                      src="../assets/img/packages/hongkong.jpg"
+                      alt="Hong Kong"
+                      class=""
+                    />
+                    <a href="#" class="bg--red-to-orange">
+                      <img src="../assets/img/icon/torii-gate.png" alt="" />
+                    </a>
+                  </div>
+                  <div class="travel__item-content">
+                    <a href="#" class="travel__item-name">
+                      <h3>Hong Kong</h3>
+                    </a>
+                    <a href="#" class="travel__item-location">
+                      <i
+                        class="travel__item-location-icon fa-solid fa-location-dot"
+                      ></i>
+                      <h4>Asia</h4>
+                    </a>
+                    <div class="travel__item-aside">
+                      <div class="aside__typologies">
+                        <div class="aside__typologies-item">
+                          <a href="#" class="aside-typologies__item-link">
+                            <h3>History</h3>
+                          </a>
+                        </div>
+                        <div class="aside__typologies-item">
+                          <a href="#" class="aside-typologies__item-link">
+                            <h3>Cultural</h3>
+                          </a>
+                          <span
+                            class="aside-typologies__item-qnt"
+                            style="--clr: #f76570"
+                            >+ 1</span
+                          >
+                        </div>
+                      </div>
+                      <div class="aside__price">
+                        <span class="aside__price-old">1000</span>
+                        <span class="aside__price-current">500</span>
+                        <span>$</span>
+                      </div>
+                    </div>
+                    <p class="travel__item-desc">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                      Nunc ut efficitur ante. Donec dapibus dictum scelerisque.
+                    </p>
+                    <div class="travel__item-details">
+                      <a
+                        href="#"
+                        class="travel__item-btn"
+                        style="--clr: #f76570"
+                        >Details</a
+                      >
+                      <div class="aside__price">
+                        <span class="aside__price-old">1000</span>
+                        <span class="aside__price-current">500</span>
+                        <span>$</span>
+                      </div>
+                    </div>
+                  </div>
+                  <a href="#" class="travel__item-sales">Sale</a>
+                </div>
+              </div>
+              <div
+                class="col-xxl-6 col-xl-6 col-lg-12 col-md-12 col-sm-12 gx-5"
+              >
+                <div class="travel__item">
+                  <div class="travel__item-img">
+                    <img
+                      src="../assets/img/packages/sanfrancisco.jpg"
+                      alt="San Francisco"
+                      class=""
+                    />
+                    <a href="#" class="bg--purple-to-red">
+                      <img src="../assets/img/icon/golden-gate.png" alt="" />
+                    </a>
+                  </div>
+                  <div class="travel__item-content">
+                    <a href="#" class="travel__item-name">
+                      <h3>San Francisco</h3>
+                    </a>
+                    <a href="#" class="travel__item-location">
+                      <i
+                        class="travel__item-location-icon fa-solid fa-location-dot"
+                      ></i>
+                      <h4>United States</h4>
+                    </a>
+                    <div class="travel__item-aside">
+                      <div class="aside__typologies">
+                        <div class="aside__typologies-item">
+                          <a href="#" class="aside-typologies__item-link">
+                            <h3>Sport</h3>
+                          </a>
+                        </div>
+                        <div class="aside__typologies-item">
+                          <a href="#" class="aside-typologies__item-link">
+                            <h3>Relax</h3>
+                          </a>
+                          <span
+                            class="aside-typologies__item-qnt"
+                            style="--clr: #ba71da"
+                            >+ 1</span
+                          >
+                        </div>
+                      </div>
+                      <div class="aside__price">
+                        <span class="aside__price-current">400</span>
+                        <span>$</span>
+                      </div>
+                    </div>
+                    <p class="travel__item-desc">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                      Nunc ut efficitur ante. Donec dapibus dictum scelerisque.
+                    </p>
+                    <div class="travel__item-details">
+                      <a
+                        href="#"
+                        class="travel__item-btn"
+                        style="--clr: #ba71da"
+                        >Details</a
+                      >
+                      <div class="aside__price">
+                        <span class="aside__price-current">400</span>
+                        <span>$</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="col-xxl-6 col-xl-6 col-lg-12 col-md-12 col-sm-12 gx-5"
+              >
+                <div class="travel__item">
+                  <div class="travel__item-img">
+                    <img
+                      src="../assets/img/packages/phuket.jpg"
+                      alt="Phuket"
+                      class=""
+                    />
+                    <a href="#" class="bg--blue-to-light-blue">
+                      <img src="../assets/img/icon/buddha.png" alt="" />
+                    </a>
+                  </div>
+                  <div class="travel__item-content">
+                    <a href="#" class="travel__item-name">
+                      <h3>Phuket</h3>
+                    </a>
+                    <a href="#" class="travel__item-location">
+                      <i
+                        class="travel__item-location-icon fa-solid fa-location-dot"
+                      ></i>
+                      <h4>Thailandia</h4>
+                    </a>
+                    <div class="travel__item-aside">
+                      <div class="aside__typologies">
+                        <div class="aside__typologies-item">
+                          <a href="#" class="aside-typologies__item-link">
+                            <h3>Relax</h3>
+                          </a>
+                        </div>
+                        <div class="aside__typologies-item">
+                          <a href="#" class="aside-typologies__item-link">
+                            <h3>Cultural</h3>
+                          </a>
+                          <span
+                            class="aside-typologies__item-qnt"
+                            style="--clr: #14b9d5"
+                            >+ 1</span
+                          >
+                        </div>
+                      </div>
+                      <div class="aside__price">
+                        <span class="aside__price-current">1200</span>
+                        <span>$</span>
+                      </div>
+                    </div>
+                    <p class="travel__item-desc">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                      Nunc ut efficitur ante. Donec dapibus dictum scelerisque.
+                    </p>
+                    <div class="travel__item-details">
+                      <a
+                        href="#"
+                        class="travel__item-btn"
+                        style="--clr: #14b9d5"
+                        >Details</a
+                      >
+                      <div class="aside__price">
+                        <span class="aside__price-current">1200</span>
+                        <span>$</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="col-xxl-6 col-xl-6 col-lg-12 col-md-12 col-sm-12 gx-5"
+              >
+                <div class="travel__item">
+                  <div class="travel__item-img">
+                    <img
+                      src="../assets/img/packages/amsterdam.jpg"
+                      alt="Amsterdam"
+                      class=""
+                    />
+                    <a href="#" class="bg--orange-to-light-orange">
+                      <img src="../assets/img/icon/london-eye.png" alt="" />
+                    </a>
+                  </div>
+                  <div class="travel__item-content">
+                    <a href="#" class="travel__item-name">
+                      <h3>Amsterdam</h3>
+                    </a>
+                    <a href="#" class="travel__item-location">
+                      <i
+                        class="travel__item-location-icon fa-solid fa-location-dot"
+                      ></i>
+                      <h4>Nertherlands</h4>
+                    </a>
+                    <div class="travel__item-aside">
+                      <div class="aside__typologies">
+                        <div class="aside__typologies-item">
+                          <a href="#" class="aside-typologies__item-link">
+                            <h3>History</h3>
+                          </a>
+                        </div>
+                        <div class="aside__typologies-item">
+                          <a href="#" class="aside-typologies__item-link">
+                            <h3>Sport</h3>
+                          </a>
+                          <span
+                            class="aside-typologies__item-qnt"
+                            style="--clr: #f3a46b"
+                            >+ 1</span
+                          >
+                        </div>
+                      </div>
+                      <div class="aside__price">
+                        <!-- <span class="aside__price-old">1000</span> -->
+                        <span class="aside__price-current">1500</span>
+                        <span>$</span>
+                      </div>
+                    </div>
+                    <p class="travel__item-desc">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                      Nunc ut efficitur ante. Donec dapibus dictum scelerisque.
+                    </p>
+                    <div class="travel__item-details">
+                      <a
+                        href="#"
+                        class="travel__item-btn"
+                        style="--clr: #f3a46b"
+                        >Details</a
+                      >
+                      <div class="aside__price">
+                        <!-- <span class="aside__price-old">1000</span> -->
+                        <span class="aside__price-current">1500</span>
+                        <span>$</span>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- <a href="#" class="travel__item-sales">Sale</a> -->
+                </div>
+              </div>
+              <div
+                class="col-xxl-6 col-xl-6 col-lg-12 col-md-12 col-sm-12 gx-5"
+              >
+                <div class="travel__item">
+                  <div class="travel__item-img">
+                    <img
+                      src="../assets/img/packages/tuscany.jpg"
+                      alt="Tuscany"
+                      class=""
+                    />
+                    <a href="#" class="bg--green-to-light-green">
+                      <img src="../assets/img/icon/pisa.png" alt="" />
+                    </a>
+                  </div>
+                  <div class="travel__item-content">
+                    <a href="#" class="travel__item-name">
+                      <h3>Tuscany</h3>
+                    </a>
+                    <a href="#" class="travel__item-location">
+                      <i
+                        class="travel__item-location-icon fa-solid fa-location-dot"
+                      ></i>
+                      <h4>Italy</h4>
+                    </a>
+                    <div class="travel__item-aside">
+                      <div class="aside__typologies">
+                        <div class="aside__typologies-item">
+                          <a href="#" class="aside-typologies__item-link">
+                            <h3>Sport</h3>
+                          </a>
+                        </div>
+                        <div class="aside__typologies-item">
+                          <a href="#" class="aside-typologies__item-link">
+                            <h3>Relax</h3>
+                          </a>
+                          <span
+                            class="aside-typologies__item-qnt"
+                            style="--clr: #1bbc9b"
+                            >+ 1</span
+                          >
+                        </div>
+                      </div>
+                      <div class="aside__price">
+                        <span class="aside__price-old">950</span>
+                        <span class="aside__price-current">730</span>
+                        <span>$</span>
+                      </div>
+                    </div>
+                    <p class="travel__item-desc">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                      Nunc ut efficitur ante. Donec dapibus dictum scelerisque.
+                    </p>
+                    <div class="travel__item-details">
+                      <a
+                        href="#"
+                        class="travel__item-btn"
+                        style="--clr: #1bbc9b"
+                        >Details</a
+                      >
+                      <div class="aside__price">
+                        <span class="aside__price-old">950</span>
+                        <span class="aside__price-current">730</span>
+                        <span>$</span>
+                      </div>
+                    </div>
+                  </div>
+                  <a href="#" class="travel__item-sales">Sale</a>
+                </div>
+              </div>
+            </div>
+            <!-- Phân trang -->
+            <div class="pagination__content">
+              <i class="pagination__icon-previous fa-solid fa-chevron-left"></i>
+              <ul class="pagination__list">
+                <!-- Class: pagination__item--active => trang đang hiển thị -->
+                <li class="pagination__item pagination__item--active">
+                  <a href="#" class="pagination__item-link">1</a>
+                </li>
+                <li class="pagination__item">
+                  <a href="#" class="pagination__item-link">2</a>
+                </li>
+                <li class="pagination__item">
+                  <a href="#" class="pagination__item-link">...</a>
+                </li>
+                <li class="pagination__item">
+                  <a href="#" class="pagination__item-link">9</a>
+                </li>
+                <li class="pagination__item">
+                  <a href="#" class="pagination__item-link">10</a>
+                </li>
+              </ul>
+              <i class="pagination__icon-next fa-solid fa-chevron-right"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Footer -->
+      <footer id="footer"></footer>
+    </div>
+  </body>
+  <script>
+    $(document).ready(function () {
+      $(".search-display__grid").addClass("search__list--show");
+      $(".filters-display__grid").addClass("filters-display__icon--active");
+    });
+  </script>
+</html>

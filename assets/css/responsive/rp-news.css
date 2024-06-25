@@ -1,0 +1,27 @@
+/* Kích thước màn hình dưới 1200px */
+@media (max-width: 74.9375em) {
+  .news__item-img {
+    padding-top: unset;
+  }
+  .news__header-title {
+    bottom: 15px;
+    left: 5%;
+  }
+}
+
+/* Kích thước màn hình dưới 768px */
+@media (max-width: 47.9375em) {
+  .news__header-title {
+    bottom: 0;
+    left: 5%;
+  }
+
+  .news__item {
+    flex-direction: column;
+    margin: 0 30px;
+  }
+
+  .news__item-img {
+    padding-top: 100%;
+  }
+}
