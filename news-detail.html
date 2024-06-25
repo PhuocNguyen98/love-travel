@@ -5,24 +5,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>News Routes - Love Travel</title>
     <!-- Link Favicon -->
-    <link rel="icon" type="image/x-icon" href="../assets/img/favicon.png" />
+    <link rel="icon" type="image/x-icon" href="./assets/img/favicon.png" />
     <!-- Link CSS -->
+    <link rel="stylesheet" href="./vendor/normalize-v8.0.1/normalize.min.css" />
+    <link rel="stylesheet" href="./assets/css/base.css" />
+    <link rel="stylesheet" href="./assets/css/main.css" />
+    <link rel="stylesheet" href="./assets/css/news-detail.css" />
+    <link rel="stylesheet" href="./assets/css/responsive/responsive.css" />
+    <link rel="stylesheet" href="./assets/css/responsive/rp-news-detail.css" />
     <link
       rel="stylesheet"
-      href="../vendor/normalize-v8.0.1/normalize.min.css"
-    />
-    <link rel="stylesheet" href="../assets/css/base.css" />
-    <link rel="stylesheet" href="../assets/css/main.css" />
-    <link rel="stylesheet" href="../assets/css/news-detail.css" />
-    <link rel="stylesheet" href="../assets/css/responsive/responsive.css" />
-    <link rel="stylesheet" href="../assets/css/responsive/rp-news-detail.css" />
-    <link
-      rel="stylesheet"
-      href="../vendor/font-awesone-v6.5.2/css/all.min.css"
+      href="./vendor/font-awesone-v6.5.2/css/all.min.css"
     />
     <link
       rel="stylesheet"
-      href="../vendor/bootstrap-v5.3.3/css/bootstrap.min.css"
+      href="./vendor/bootstrap-v5.3.3/css/bootstrap.min.css"
     />
     <!-- Link Font Google -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -32,8 +29,8 @@
       rel="stylesheet"
     />
     <!-- Link Javascript -->
-    <script src="../vendor/jquery/jquery-3.7.1.min.js"></script>
-    <script src="../assets/js/main.js"></script>
+    <script src="./vendor/jquery/jquery-3.7.1.min.js"></script>
+    <script src="./assets/js/main.js"></script>
   </head>
   <body>
     <div class="news-detail__wrap">
@@ -41,7 +38,7 @@
       <header class="header news-detail__header">
         <div
           class="header__background page-header__background"
-          style="background-image: url(../assets/img/news-detail/bg-header.jpg)"
+          style="background-image: url(./assets/img/news-detail/bg-header.jpg)"
         ></div>
         <!-- Menu Header -->
         <div
@@ -97,14 +94,14 @@
         <div class="row gy-5">
           <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-12 col-sm-12 gx-5">
             <img
-              src="../assets/img/news-detail/news-detail-1.jpg"
+              src="./assets/img/news-detail/news-detail-1.jpg"
               alt=""
               class="news-detail__img"
             />
           </div>
           <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-12 col-sm-12 gx-5">
             <img
-              src="../assets/img/news-detail/news-detail-2.jpg"
+              src="./assets/img/news-detail/news-detail-2.jpg"
               alt=""
               class="news-detail__img"
             />
@@ -137,24 +134,16 @@
               <span class="tags__title">Tags: </span>
               <ul class="tags__list">
                 <li class="tags__item">
-                  <a href="../pages/tags.html" class="tags__item-link"
-                    >Family</a
-                  >
+                  <a href="./tags.html" class="tags__item-link">Family</a>
                 </li>
                 <li class="tags__item">
-                  <a href="../pages/tags.html" class="tags__item-link"
-                    >Holiday</a
-                  >
+                  <a href="./tags.html" class="tags__item-link">Holiday</a>
                 </li>
                 <li class="tags__item">
-                  <a href="../pages/tags.html" class="tags__item-link"
-                    >Packages</a
-                  >
+                  <a href="./tags.html" class="tags__item-link">Packages</a>
                 </li>
                 <li class="tags__item">
-                  <a href="../pages/tags.html" class="tags__item-link"
-                    >Travel</a
-                  >
+                  <a href="./tags.html" class="tags__item-link">Travel</a>
                 </li>
               </ul>
             </div>
@@ -165,4 +154,11 @@
       <footer id="footer" class=""></footer>
     </div>
   </body>
+  <script>
+    // Load Header và Footer
+    $(document).ready(function () {
+      $("#menu__header").load("./header.html");
+      $("#footer").load("./footer.html");
+    });
+  </script>
 </html>
