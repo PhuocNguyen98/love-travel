@@ -5,24 +5,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Our News - Love Travel</title>
     <!-- Link Favicon -->
-    <link rel="icon" type="image/x-icon" href="../assets/img/favicon.png" />
+    <link rel="icon" type="image/x-icon" href="./assets/img/favicon.png" />
     <!-- Link CSS -->
+    <link rel="stylesheet" href="./vendor/normalize-v8.0.1/normalize.min.css" />
+    <link rel="stylesheet" href="./assets/css/base.css" />
+    <link rel="stylesheet" href="./assets/css/main.css" />
+    <link rel="stylesheet" href="./assets/css/news.css" />
+    <link rel="stylesheet" href="./assets/css/responsive/responsive.css" />
+    <link rel="stylesheet" href="./assets/css/responsive/rp-news.css" />
     <link
       rel="stylesheet"
-      href="../vendor/normalize-v8.0.1/normalize.min.css"
-    />
-    <link rel="stylesheet" href="../assets/css/base.css" />
-    <link rel="stylesheet" href="../assets/css/main.css" />
-    <link rel="stylesheet" href="../assets/css/news.css" />
-    <link rel="stylesheet" href="../assets/css/responsive/responsive.css" />
-    <link rel="stylesheet" href="../assets/css/responsive/rp-news.css" />
-    <link
-      rel="stylesheet"
-      href="../vendor/font-awesone-v6.5.2/css/all.min.css"
+      href="./vendor/font-awesone-v6.5.2/css/all.min.css"
     />
     <link
       rel="stylesheet"
-      href="../vendor/bootstrap-v5.3.3/css/bootstrap.min.css"
+      href="./vendor/bootstrap-v5.3.3/css/bootstrap.min.css"
     />
     <!-- Link Font Google -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -32,8 +29,8 @@
       rel="stylesheet"
     />
     <!-- Link Javascript -->
-    <script src="../vendor/jquery/jquery-3.7.1.min.js"></script>
-    <script src="../assets/js/main.js"></script>
+    <script src="./vendor/jquery/jquery-3.7.1.min.js"></script>
+    <script src="./assets/js/main.js"></script>
   </head>
   <body>
     <div class="news__wrap">
@@ -41,7 +38,7 @@
       <header class="header news__header">
         <div
           class="header__background page-header__background"
-          style="background-image: url(../assets/img/news/bg-header.jpg)"
+          style="background-image: url(./assets/img/news/bg-header.jpg)"
         ></div>
         <!-- Menu Header -->
         <div id="menu__header" class="menu__header news__menu-header"></div>
@@ -57,7 +54,7 @@
             <div class="news__item">
               <div
                 class="news__item-img"
-                style="background-image: url(../assets/img/news/news-1.jpg)"
+                style="background-image: url(./assets/img/news/news-1.jpg)"
               ></div>
               <div class="news__item-content" style="--clr-bg: #1bbc9b">
                 <span class="news__item-label ms-5">Travel Tips</span>
@@ -67,7 +64,7 @@
                   ultricies magna et. Quisque euismod orci ut et lobortis.
                 </p>
                 <a
-                  href="../pages/news-detail.html"
+                  href="./news-detail.html"
                   class="news__item-btn ms-5"
                   style="--clr-text: #1bbc9b; --clr-bg-btn: #fff"
                   >Read More</a
@@ -79,7 +76,7 @@
             <div class="news__item">
               <div
                 class="news__item-img"
-                style="background-image: url(../assets/img/news/news-2.jpg)"
+                style="background-image: url(./assets/img/news/news-2.jpg)"
               ></div>
               <div class="news__item-content" style="--clr-bg: #fff">
                 <span class="ms-5 news__item-label text-color--default"
@@ -93,7 +90,7 @@
                   ultricies magna et. Quisque euismod orci ut et lobortis.
                 </p>
                 <a
-                  href="../pages/news-detail.html"
+                  href="./news-detail.html"
                   class="ms-5 news__item-btn"
                   style="--clr-text: #fff; --clr-bg-btn: #ba71da"
                   >Read More</a
@@ -105,7 +102,7 @@
             <div class="news__item flex-right">
               <div
                 class="news__item-img"
-                style="background-image: url(../assets/img/news/news-3.jpg)"
+                style="background-image: url(./assets/img/news/news-3.jpg)"
               ></div>
               <div class="news__item-content" style="--clr-bg: #fff">
                 <span class="ms-5 news__item-label text-color--default"
@@ -119,7 +116,7 @@
                   ultricies magna et. Quisque euismod orci ut et lobortis.
                 </p>
                 <a
-                  href="../pages/news-detail.html"
+                  href="./news-detail.html"
                   class="ms-5 news__item-btn"
                   style="--clr-text: #fff; --clr-bg-btn: #f76570"
                   >Read More</a
@@ -131,7 +128,7 @@
             <div class="news__item flex-right">
               <div
                 class="news__item-img"
-                style="background-image: url(../assets/img/news/news-4.jpg)"
+                style="background-image: url(./assets/img/news/news-4.jpg)"
               ></div>
               <div class="news__item-content" style="--clr-bg: #14b9d5">
                 <span class="ms-5 news__item-label">Our News</span>
@@ -141,7 +138,7 @@
                   ultricies magna et. Quisque euismod orci ut et lobortis.
                 </p>
                 <a
-                  href="../pages/news-detail.html"
+                  href="./news-detail.html"
                   class="ms-5 news__item-btn"
                   style="--clr-text: #14b9d5; --clr-bg-btn: #fff"
                   >Read More</a
@@ -155,4 +152,11 @@
       <footer id="footer" class=""></footer>
     </div>
   </body>
+  <script>
+    // Load Header và Footer
+    $(document).ready(function () {
+      $("#menu__header").load("./header.html");
+      $("#footer").load("./footer.html");
+    });
+  </script>
 </html>
